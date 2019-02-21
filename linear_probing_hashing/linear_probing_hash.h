@@ -18,7 +18,6 @@ typedef struct hash_node
     uint8_t token;
     uint8_t key[KEY_LEN];
     uint8_t value[VALUE_LEN];
-    uint32_t original_index;
 }hash_node;
 
 typedef struct linear_hash

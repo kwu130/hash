@@ -49,7 +49,6 @@ uint8_t linear_insert(linear_hash *linear, uint8_t *key, uint8_t *value)
             memcpy(linear->node[i].key, key, KEY_LEN);
             memcpy(linear->node[i].value, value, VALUE_LEN);
             linear->node[i].token = 1;
-            linear->node[i].original_index = index;
             //printf("insert key:%s value:%s index:%d\n", linear->node[i].key, linear->node[i].value, index);
             linear->num_total_element++;
             return 0;
