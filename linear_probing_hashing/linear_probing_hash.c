@@ -89,6 +89,7 @@ uint8_t linear_delete(linear_hash *linear, uint8_t *key)
 uint8_t linear_destory(linear_hash *linear)
 {
     free(linear->node);
+	free(linear);
     return 0;
 }
 
